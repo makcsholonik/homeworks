@@ -24,7 +24,6 @@
 }
 
 /*ТРЕУГОЛЬНИК*/
-
 .content::after {
     content: "";
     z-index: 0;

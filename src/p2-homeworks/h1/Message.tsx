@@ -17,7 +17,9 @@ export function Message ( props : MessagePropsType ) {
 				<div className={ cl.message }>{ props.message }</div>
 				<div className={ cl.time }>{ props.time }</div>
 			</div>
-			<div className={cl.clear}></div>
+			<div className={cl.clear}>
+
+			</div>
 		</div>
 	)
 }
