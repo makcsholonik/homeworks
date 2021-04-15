@@ -1,3 +1,15 @@
-.someClass {
+.someClass {}
 
+.affair {
+    display: flex;
+    width: 300px;
+}
+
+.item {
+    margin: 0;
+    width: 100px;
+}
+
+.active {
+    background: green;
 }
