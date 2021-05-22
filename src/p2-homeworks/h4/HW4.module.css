@@ -11,3 +11,11 @@
 .testSpanError {
     color: blue;
 }
+.spanClassName {}
+
+.error {
+    color: red;
+}
+.errorInput {
+    background-color: red;
+}
