@@ -1,4 +1,4 @@
-import React, { ChangeEvent, KeyboardEvent } from 'react'
+import React, { ChangeEvent } from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
@@ -7,21 +7,20 @@ type GreetingPropsType = {
 	addUser : () => void
 	error : string
 	totalUsers : number
-	onKeyPressAddUser : ( e : KeyboardEvent<HTMLInputElement> ) => void
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting : React.FC<GreetingPropsType> = (
-	{ name, setNameCallback, addUser, error, totalUsers, onKeyPressAddUser } // деструктуризация пропсов
+	{ name, setNameCallback, addUser, error, totalUsers } // деструктуризация пропсов
 ) => {
-	const inputClass = error ? (`${ s.inputClass } ${ s.error }`) : (s.inputClass);
+	const inputClass = error ? (`${ s.input } ${ s.error }`) : (s.input)
 
 	return (
 		<div>
-			<input value={ name } onChange={ setNameCallback } className={ inputClass } onKeyPress={ onKeyPressAddUser }/>
-			<span>{ error }</span>
-			<button onClick={ addUser }>add</button>
-			<span>{ totalUsers }</span>
+			<input value={ name } onChange={ setNameCallback } className={ inputClass }/>
+			<span className={ s.errorMessage }>{ error }</span>
+			<button className={ s.buttonAdd } onClick={ addUser }>ADD</button>
+			<div className={s.totalUsers}> Total users: { totalUsers }</div>
 		</div>
 	)
 }

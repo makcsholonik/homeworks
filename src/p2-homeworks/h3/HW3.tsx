@@ -1,39 +1,39 @@
-import React, { useState } from 'react'
-import { v1 } from 'uuid'
+import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
+import { v1 } from "uuid";
 
 // types
 export type UserType = {
-	_id : string
-	name : string
+    _id: string
+    name: string
 }
 
 // уровень работы с глобальными данными
-function HW3 () {
-	const [users, setUsers] = useState<Array<UserType>> ( [] )
+function HW3() {
+    const [users, setUsers] = useState<Array<UserType>>([])
 
-	const addUserCallback = ( name : string ) => {
-		const user: UserType = {
-			_id: v1(),
-			name: name
-		}
-		setUsers([...users, user]);
-	}
+    const addUserCallback = (name: string) => {
+       const newUser: UserType = {
+          _id: v1(),
+          name: name
+       }
+        setUsers([...users, newUser])
+    }
 
-	return (
-		<div>
-			<hr/>
-			homeworks 3
+    return (
+        <div>
+            <hr/>
+            homeworks 3
 
-			{/*should work (должно работать)*/ }
-			<GreetingContainer users={ users } addUserCallback={ addUserCallback }/>
+            {/*should work (должно работать)*/}
+            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
 
-			<hr/>
-			{/*для личного творчества, могу проверить*/ }
-			{/*<AlternativeGreeting/>*/ }
-			<hr/>
-		</div>
-	)
+            <hr/>
+            {/*для личного творчества, могу проверить*/}
+            {/*<AlternativeGreeting/>*/}
+            <hr/>
+        </div>
+    )
 }
 
 export default HW3
