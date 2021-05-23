@@ -2,19 +2,34 @@
 
 }
 
+.greeting {
+    display: flex;
+    align-items: flex-start;
+}
+
 .input {
     background-color: lightblue;
+    margin: 5px;
 }
 
 .error {
     border: 1px solid darkred;
     background-color: rosybrown;
+    margin: 5px;
 }
 
 .errorMessage {
     color: darkred;
+    height: 21px;
+    margin: 5px;
 }
 
 .buttonAdd {
     font-weight: bold;
+    margin: 5px;
+}
+
+.totalUsers {
+    margin: 5px;
+    font-style: italic;
 }
