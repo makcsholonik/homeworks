@@ -1,7 +1,8 @@
 .message {
     margin: 10px 0 0 10px;
-    color: whitesmoke;
+    color: black;
 }
+
 .image {
     display: block;
     width: 40px;
@@ -15,7 +16,7 @@
 .content {
     height: 55px;
     width: 200px;
-    background-color: #082103;
+    background-color: lightblue;
     float: left;
     margin-top: 30px;
     border-radius: 5px;
@@ -28,15 +29,15 @@
     content: "";
     z-index: 0;
     position: absolute;
-    top: 142px;
-    left: 47px;
+    top: 170px;
+    left: 55px;
     border: 10px solid transparent;
-    border-right: 10px solid #082103;
-    border-bottom: 10px solid #082103;
+    border-right: 10px solid lightblue;
+    border-bottom: 10px solid lightblue;
 }
 
 .name {
-    color: darkorchid;
+    color: purple;
     font-size: 14px;
 }
 
@@ -46,7 +47,7 @@
 }
 
 .time {
-    color: limegreen;
+    color: gray;
     position: relative;
     left: 165px;
     bottom: 15px;

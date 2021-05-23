@@ -3,7 +3,7 @@
 }
 
 .input {
-    background-color: mediumaquamarine;
+    background-color: lightblue;
 }
 
 .error {
@@ -15,6 +15,6 @@
     color: darkred;
 }
 
-.buttonAdd, .totalUsers {
+.buttonAdd {
     font-weight: bold;
 }
