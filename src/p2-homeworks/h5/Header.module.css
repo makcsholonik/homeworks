@@ -1,0 +1,37 @@
+.link {
+    text-decoration: none;
+    color: grey;
+    margin: 5px;
+}
+
+.link:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.activeLink {
+    color: purple;
+    font-weight: bold;
+}
+
+.header {
+    border: 1px solid black;
+    height: 25px;
+    width: 280px;
+    transition-duration: 700ms;
+    transform: translate(-220px);
+    background-color: lightblue;
+    margin: 7px 0;
+}
+
+.header:hover {
+    transition-duration: 700ms;
+    transform: translate(0);
+}
+
+.menu {
+    text-transform: uppercase;
+    text-align: right;
+    padding: 0 0 0 15px;
+    font-weight: bold;
+}

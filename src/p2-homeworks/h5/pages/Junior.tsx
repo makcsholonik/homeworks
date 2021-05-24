@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Junior() {
+function Junior () {
 	return (
 		<div>
-
+			Junior
 		</div>
 	)
 }

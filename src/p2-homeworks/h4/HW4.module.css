@@ -2,6 +2,10 @@
     border-bottom: 5px solid blue;
 }
 
+.hw {
+    font-weight: bold;
+}
+
 .column {
     display: flex;
     flex-direction: column;
