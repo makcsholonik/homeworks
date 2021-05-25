@@ -1,5 +1,6 @@
-import React, { DetailedHTMLProps, InputHTMLAttributes, HTMLAttributes, useState } from 'react'
-import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText'
+import React, { DetailedHTMLProps, HTMLAttributes, InputHTMLAttributes, useState } from 'react';
+import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText';
+import s from './SuperEditableSpan.module.css';
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
@@ -59,7 +60,7 @@ const SuperEditableSpan : React.FC<SuperEditableSpanType> = (
 				) : (
 					<span
 						onDoubleClick={ onDoubleClickCallBack }
-						className={ spanClassName }
+						className={ s.spanClassName }
 
 						{ ...restSpanProps }
 					>
